@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+@font-face {
+    font-family: 'PyeongChangPeace-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+body{
+    background: #F7F6F3;
+}
+header #wrap{
+    width: 100%;
+    overflow: hidden;
+}
+header #wrap .menu{
+    background: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    width: 100%;
+    height: 80px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    position: fixed;
+    z-index: 10;
+}
+header #wrap .menu h1{
+    font-family: 'PyeongChangPeace-Bold';
+}
+header #wrap .menu ul{
+    width: 300px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    margin: 0 auto;
+}
+header #wrap .menu li{
+    float: left;
+}
+header #wrap .menu li a{
+    display: block;
+    color: #000;
+}
+/* nav */
+nav #wrap{
+    width: 1000px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+nav #wrap .main_img img{
+    width: 100%;
+    position: relative;
+    margin-top: 100px;
+}
+nav .main_txt{
+    background: #fff;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+}
+nav .main_txt h1{
+    font-family: 'PyeongChangPeace-Bold';
+    padding-top: 80px;
+    font-size: 32px;
+    padding-bottom: 10px;
+}
+nav .main_txt p{
+    padding-top: 10px;
+    color: gray;
+}
+/* section */
+/* top */
+section #wrap{
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+section #wrap .top{
+    width: 950px;
+    overflow: hidden;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+/* ---------- 질문영역 ----------- */
+section #wrap .top img{
+    width: 300px;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+    float: left;
+    /* margin-bottom: 30px; 밑에 적용해서 삭제해도 됨*/
+}
+/* 이미지 위헤 hover시 약간 확대되는 효과를 넣었는데
+이미지 밑부분이 튀어나오지않게하려면 img밑에 다른 div를 먼저 만들고
+overflow:hiddin 시켜야하나요? */
+/* 계획없이 만들어서 img를 바로 넣어버렸습니다 */
+
+section #wrap .top .content .img { /* 추가 스타일 적용 */
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+section #wrap .top img:hover{
+    transform: scale(1.2);
+    transition: all 0.2s ease-in-out; /* 부드럽게 커지게 하기 위해서 transition 적용했어요 */     
+}
+
+/* ---------- 질문영역 ----------- */
+section #wrap .top .content{
+    background: #fff;
+    border-radius: 20px;
+    width: 300px;
+    overflow: hidden;
+    margin: 0 auto;
+    box-shadow: rgb(167, 167, 167) 0 0 10px;
+}
+section #wrap .top .content h1{
+    text-align: center;
+}
+section #wrap .top .content p{
+    border: solid 1px #000;
+    border-radius: 20px;
+    width: 70px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    transition: 0.2s;
+}
+section #wrap .top .content a{
+    display: block;
+    color: #000;
+    transition: 0.2s;
+}
+section #wrap .top .content p:hover{
+    background: #000;
+    transition: 0.2s;
+}
+section #wrap .top .content a:hover{
+    color: #fff;
+    transition: 0.2s;
+}
+/* bot */
+section #wrap2{
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+    color: #fff;
+}
+section #wrap2 .bot{
+    width: 1000px;
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+section #wrap2 .bot h1{
+    font-family: 'PyeongChangPeace-Bold';
+    font-size: 32px;
+}
+section #wrap2 .bot iframe{
+    width: 600px;
+    height: 340px;
+    margin-top: 40px;
+    border-radius: 20px;
+}
+/* footer */
+footer #wrap{
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+    color: #fff;
+}
+footer #wrap .foo_menu{
+    width: 600px;
+    height: 50px;
+    margin: 0 auto; 
+    line-height: 50px;
+    border-top: #fff solid 1px;
+    border-bottom: #fff solid 1px;
+}
+footer #wrap .foo_menu ul{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+footer #wrap .foo_menu li{
+    float: left;
+}
+footer #wrap .foo_menu li a{
+    color: #fff;
+}
+footer #wrap .foo_txt{
+    width: 600px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+footer #wrap .foo_txt h1{
+    font-family: 'PyeongChangPeace-Bold';
+}
+footer #wrap .foo_txt p{
+    margin-top: 10px;
+}
+footer #wrap .foo_txt p:last-child{
+    margin-bottom: 40px;
+}
